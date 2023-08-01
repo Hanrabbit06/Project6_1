@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="30dp"
     tools:context=".MainActivity">
 
     <Chronometer
@@ -17,16 +16,10 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:gravity="center_horizontal"
-        />
-    <Button
-        android:id="@+id/btnStart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_start"
-        android:textSize="20sp"
-        android:padding="10dp"
+        android:background="#C1C1C1"
         />
     <RadioGroup
+        android:padding="30dp"
         android:id="@+id/rg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,11 +42,13 @@
             />
     </RadioGroup>
     <FrameLayout
+        android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp">
-        <CalendarView
+        <DatePicker
             android:id="@+id/calender"
+            android:datePickerMode="spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TimePicker
@@ -69,20 +64,13 @@
         android:gravity="bottom"
         android:orientation="horizontal"
         >
-        <Button
-            android:id="@+id/btnDone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_done"
-            android:textSize="20sp"
-            android:layout_marginLeft="10dp"
-            android:padding="15sp"/>
+
         <TextView
             android:id="@+id/textResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:textSize="15sp"
+            android:background="#C1C1C1"
             android:text="2023년 7월 7일 12시 30분 예약됨"/>
     </LinearLayout>
 
